@@ -3,7 +3,7 @@ from io import BytesIO
 import uvicorn
 import anyio
 
-from main import main  
+from extract import extractor  
 
 app = FastAPI(title="CV LLM API")
 
@@ -25,11 +25,11 @@ async def cv_llm(file: UploadFile = File(...)):
         raise HTTPException(status_code=413, detail="File too large (max 10 MB)")
 
     file_like = BytesIO(file_content)
-    file_like.name = file.filename  # Needed for extension detection
+    file_like.name = file.filename  
 
-    # Run main() in a thread to avoid blocking
+
     try:
-        data_dict = await anyio.to_thread.run_sync(lambda: main(file_like))
+        data_dict = await anyio.to_thread.run_sync(lambda: extractor(file_like))
     except ValueError as e:
         raise HTTPException(status_code=500, detail=str(e))
 

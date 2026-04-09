@@ -8,7 +8,7 @@ from src.cv_processor.extractor import CV_EXTRACTOR
 
 parser = StrOutputParser()
 
-def main(file_like: BytesIO):
+def extractor(file_like: BytesIO):
     """
     Process a CV in memory and return structured JSON data.
     """
