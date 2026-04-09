@@ -73,3 +73,7 @@ export GROQ_API_KEY=your_api_key_here
 ```bash
 python app.py
 ```
+
+## License
+
+This project is licensed under MIT License.
