@@ -1,29 +1,31 @@
-# Byte-compiled / cache files
+# Python cache files
 __pycache__/
 *.py[cod]
-*$py.class
 
 # Virtual environment
 venv/
-.env/
 .venv/
 
 # Environment variables
 .env
 
-# Distribution / packaging
+# Git files
+.git
+.gitignore
+
+# Logs
+*.log
+
+# Build folders
 build/
 dist/
 *.egg-info/
 
-# Unit test / coverage reports
-.coverage
-htmlcov/
-.pytest_cache/
-
-# IDE files
+# IDE/editor folders
 .vscode/
 .idea/
+artifact/
+logs/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
@@ -31,7 +33,3 @@ htmlcov/
 # OS files
 .DS_Store
 Thumbs.db
-
-# Artifacts
-artifact/
-logs/

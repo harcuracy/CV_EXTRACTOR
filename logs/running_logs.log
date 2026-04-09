@@ -340,3 +340,8 @@ pip install python-multipart
 [2026-04-04 03:37:38,449: INFO: helper: created directory at: artifact]
 [2026-04-04 03:37:41,125: INFO: _client: HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"]
 [2026-04-04 03:37:41,173: INFO: helper: json file saved at: artifact\resume.json]
+[2026-04-09 14:45:19,555: INFO: helper: yaml file: schema.yaml loaded successfully]
+[2026-04-09 14:45:20,912: INFO: helper: yaml file: schema.yaml loaded successfully]
+[2026-04-09 14:46:39,663: INFO: helper: yaml file: config\config.yaml loaded successfully]
+[2026-04-09 14:46:39,664: INFO: helper: created directory at: artifact]
+[2026-04-09 14:46:58,371: INFO: _base_client: Retrying request to /openai/v1/chat/completions in 0.481883 seconds]
