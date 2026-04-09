@@ -13,7 +13,6 @@ from pathlib import Path
 from typing import Any
 
 
-
 from src import logger
 
 
@@ -157,10 +156,10 @@ def read_pdf_as_string(file_input):
         return text
 
     except FileNotFoundError:
-        print(f"Error: File not found at {file_input}")
+        logger.info(f"Error: File not found at {file_input}")
         return None
     except pypdf.errors.PdfReadError:
-        print("Error: Could not read PDF file. It may be corrupted or encrypted.")
+        logger.info("Error: Could not read PDF file. It may be corrupted or encrypted.")
         return None
 
 

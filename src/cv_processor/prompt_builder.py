@@ -5,7 +5,7 @@ from src.utils.constant import SCHEMA_FILE_PATH
 CV_SCHEMA = dict(read_yaml(SCHEMA_FILE_PATH))
 
 def build_prompt(resume_text: str):
-    return f"""
+    prompt_template = f"""
 You are an expert resume parser.
 
 Return ONLY valid JSON.
@@ -26,3 +26,4 @@ Resume:
 {{resume_text}}
 
 """
+    return  prompt_template
