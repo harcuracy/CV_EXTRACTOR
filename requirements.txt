@@ -1,0 +1,16 @@
+pandas
+langchain
+numpy
+pypdf
+dataclasses
+pyyaml
+python-dotenv
+langchain-groq
+fastapi
+docx2txt
+types-pyyaml
+python-multipart
+ensure==1.0.2
+python-box==6.0.2
+
+-e .
